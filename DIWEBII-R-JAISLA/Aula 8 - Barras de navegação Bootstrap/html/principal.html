@@ -1,94 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link bootstrap.min -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Link bootstrap ícone -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons (corrigido) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Link bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-    <title>Barra de Navegação</title>
+    <title>Bootstrap Correto</title>
 </head>
+
 <body>
-    <!-- nav.navbar.bg-light>div.container -->
-   <nav class="navbar bg-light navbar-expand-sm">
+    <!-- Navbar -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+        <div class="container">
+            <a href="https://icons.getbootstrap.com/" target="_blank" class="navbar-brand d-flex align-items-center">
+                <i class="bi bi-bootstrap-fill fs-1 me-2"></i>
+                Bootstrap 5
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav">
+                    <a href="Principal.html" class="nav-link active">Principal</a>
+                    <div class="dropdown">
+                        <a href="Produtos.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Produto1</a></li>
+                            <li><a href="#" class="dropdown-item">Produto2</a></li>
+                            <li><a href="#" class="dropdown-item">Produto3</a></li>
+                            <li><a href="#" class="dropdown-item">Produto4</a></li>
+                            <li><a href="#" class="dropdown-item">Produto5</a></li>
+                        </ul>
+                    </div>
+                    <a href="Contatos.html" class="nav-link">Contatos</a>
+                    <a href="Sobre.html" class="nav-link">Sobre</a>
+                </div>
+            </div>
+
+            <form action="" class="d-flex">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="container py-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="ads">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Itens do carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=1" alt="Fotos Ilustrativas">
+                    <div class="carousel-caption">
+                        <h5>Título 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=2" alt="Fotos Ilustrativas">
+                    <div class="carousel-caption">
+                        <h5>Título 2</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="https://picsum.photos/1280/420?random=3" alt="Fotos Ilustrativas">
+                    <div class="carousel-caption">
+                        <h5>Título 3</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mb-4">
+        <div class="row">
+
+            <div class="col-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Cartão</h5>
+                        <h6 class="card-subtitle text-muted">Subtítulo do Cartão</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="d-flex p-2">
+                        <a href="#" class="btn btn-success w-50">Comprar</a>
+                        <a href="#" class="btn btn-success w-50 ms-2">Favoritos
+                            <i class="bi bi-heart ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Cartão</h5>
+                        <h6 class="card-subtitle text-muted">Subtítulo do Cartão</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="d-flex p-2">
+                        <a href="#" class="btn btn-success w-50">Comprar</a>
+                        <a href="#" class="btn btn-success w-50 ms-2">Favoritos
+                            <i class="bi bi-heart ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/300" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Cartão</h5>
+                        <h6 class="card-subtitle text-muted">Subtítulo do Cartão</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="d-flex p-2">
+                        <a href="#" class="btn btn-success w-50">Comprar</a>
+                        <a href="#" class="btn btn-success w-50 ms-2">Favoritos
+                            <i class="bi bi-heart ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Texto extra -->
     <div class="container">
-        <!-- a.navbar-brand -->
-        <a href="https://icons.getbootstrap.com/" target="_blank" class="navbar-brand d-flex align-items-center">
-            <!-- i.bi-bootstrap-fill.fs-1.me-2 -->
-            <i class="bi-bootstrap-fill fs-1 me-2"></i>
-            Bootstrap 5
-        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem...</p>
 
-        <!-- button.navbar-toggler[type="button"] -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
-            <!-- span.navbar-toggler-icon -->
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem...</p>
 
-        <!-- div.collapse.navbar-collapse>div.navbar-nav>a.nav-link[href="#"]*4 -->
-        <div class="collapse navbar-collapse" id="menuNavbar">
-            <div class="navbar-nav">
-                <a href="principal.html" class="nav-link active">Principal</a>
-                <a href="produtos.html" class="nav-link">Produtos</a>
-                <a href="contatos.html" class="nav-link">Contatos</a>
-                <a href="sobre.html" class="nav-link">Sobre</a>
-            </div>
-        </div>
-        <!-- form.d-flex>div.input-group -->
-        <form action="" class="d-flex">
-            <div class="input-group">
-                <!-- input.form-control.me-2 -->
-                <input type="search" class="form-control" placeholder="Buscar...">
-                <!-- button.btn.btn-outline-success{Buscar}[type="submit"] -->
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </div>
-        </form>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem...</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem...</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem...</p>
     </div>
-   </nav>
-   <!-- div.container>div.carousel.slide[data-bs-ride="carousel"] -->
-   <div class="container py-5">
-    <div class="carousel slide" data-bs-ride="carousel" id="ads">
-        <!-- div.carousel-inner>div.carousel-item-active>img[src="https://picsum.phtos/1280/420"] -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://picsum.photos/1280/420?random=1" alt="Fotos Ilustrativas">
-            </div>
 
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/1280/420?random=2" alt="Fotos Ilustrativas">
-            </div>
-
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://picsum.photos/1280/420?random=3" alt="Fotos Ilustrativas">
-            </div>
-        </div>
-        <!-- button.carousel-control-prev[data-bs-target="#ads" data-bs-slide="prev"]>span.carousel-control-prev-icon -->
-        <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
-
-        <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
-    </div>
-   </div>
-   <div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem iusto fuga similique quis nihil amet numquam. Et illum neque quae fuga quibusdam explicabo eius quod corporis pariatur.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem iusto fuga similique quis nihil amet numquam. Et illum neque quae fuga quibusdam explicabo eius quod corporis pariatur.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem iusto fuga similique quis nihil amet numquam. Et illum neque quae fuga quibusdam explicabo eius quod corporis pariatur.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem iusto fuga similique quis nihil amet numquam. Et illum neque quae fuga quibusdam explicabo eius quod corporis pariatur.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore necessitatibus voluptate quidem iusto fuga similique quis nihil amet numquam. Et illum neque quae fuga quibusdam explicabo eius quod corporis pariatur.</p>
-   </div> 
-
-   <!-- footer.p-4.bg-dark.text-light.text-center{Todos os direitos reservados.} -->
-   <footer class="p-4 bg-dark text-light text-center sticky-bottom">Todos os direitos reservados.</footer>
+    <!-- Footer -->
+    <footer class="p-4 bg-dark text-light text-center">Todos os direitos reservados.</footer>
 </body>
+
 </html>

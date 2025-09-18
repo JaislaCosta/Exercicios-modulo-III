@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,7 +38,7 @@
             <div class="navbar-nav">
                 <a href="principal.html" class="nav-link">Principal</a>
                 <div class="dropdown">
-                    <a href="produtos.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
+                    <a href="produtos.html" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown">Produtos</a>
                     <!-- ul.dropdown-menu>(li>a.dropdown-item[href="#"]{Produto $})*5 -->
                     <ul class="dropdown-menu">
                         <li><a href="#" class="dropdown-item">Produto 1</a></li>
@@ -54,10 +54,12 @@
         </div>
         <!-- form.d-flex>div.input-group>input.form-control[type="search"] -->
         <form action="" class="d-flex">
-            <div class="input-group"><input type="search" class="form-control">
-            </div>
-            <!-- button.btn.btn-outline-success[type="submit"]{Buscar...} -->
-            <button class="btn btn-outline-success" type="submit">Buscar...</button>
+                <div class="input-group">
+                    <!-- button.btn.btn-outline-success[type="submit"]{Buscar...} -->
+                    <input type="search" class="form-control" placeholder="Buscar...">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </div>
+            </form>
         </form>
     </div>
    </nav>
@@ -85,6 +87,5 @@
    </div> 
    <!-- footer.p-4.bg-dark.text-light.text-center{Todos os direitos reservados.} -->
    <footer class="p-4 bg-dark text-light text-center sticky-bottom">Todos os direitos reservados.</footer>
-
 </body>
 </html>
