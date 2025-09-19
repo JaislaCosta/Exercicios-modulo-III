@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link bootstrap.min -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link bootstrap ícone -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <!-- .container.col-11.col-md-9 -->
+    <div class="container col-11 col-md-9">
+        <!-- div.row.gx-5 -->
+        <div class="row gx-5">
+            <!-- div.col-md-6 -->
+            <div class="col-md-6">
+                <h2>Realize seu Cadastro</h2>
+                <form action="">
+                    <!-- div.form-floating.mb-3 -->
+                    <div class="form-floating mb-3">
+                        <!-- input.form-control[type="text" id="name" name="name" placeholder="Digite seu nome"] -->
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
+
+                        <!-- label.form-label{Digite seu nome} -->
+                        <label for="name" class="form-label">Digite seu nome</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <!-- input.form-control[type="text" id="name" name="name" placeholder="Digite seu nome"] -->
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Digite seu sobrenome">
+
+                        <!-- label.form-label{Digite seu nome} -->
+                        <label for="lastname" class="form-label">Digite seu sobrenome</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <!-- input.form-control[type="text" id="name" name="name" placeholder="Digite seu nome"] -->
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+
+                        <!-- label.form-label{Digite seu nome} -->
+                        <label for="email" class="form-label">Digite seu e-mail</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <!-- input.form-control[type="text" id="name" name="name" placeholder="Digite seu nome"] -->
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
+
+                        <!-- label.form-label{Digite seu nome} -->
+                        <label for="password" class="form-label">Digite sua senha</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <!-- input.form-control[type="text" id="name" name="name" placeholder="Digite seu nome"] -->
+                        <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Confirme sua senha">
+
+                        <!-- label.form-label{Digite seu nome} -->
+                        <label for="confirmpassword" class="form-label">Confirme sua senha</label>
+                    </div>
+                    <!-- div.mb-3 -->
+                    <div class="mb-3">
+                        <!-- div.form-check.mb-2 -->
+                        <div class="form-check mb-2">
+                            <!-- input.form-check-input[type="checkbox" id="agree-form" name="agree-form"] -->
+                            <input type="checkbox" class="form-check-input" id="agree-form" name="agree-form">
+                            <!-- label.form-check-label -->
+                            <label for="" class="form-check-label">
+                                Você aceita os <a href="">termos de serviço</a>?
+                            </label>
+                        </div>
+                        <!-- div.form-check.mb-2 -->
+                        <div class="form-check mb-2">
+                            <!-- input.form-check-input[type="checkbox" name="newsletter"] -->
+                            <input type="checkbox" class="form-check-input" name="newsletter">
+                            <!-- label.form-check-label{Deseja receber nossas newsletter?} -->
+                            <label for="" class="form-check-label">Deseja receber nossas newsletter?</label>
+                        </div>
+                        <!-- input.btn.btn-primary[value="Cadastrar"] -->
+                        <input type="text" class="btn btn-primary" value="Cadastrar">
+                    </div>
+
+                </form>
+            </div>
+            <!-- div.col-md-6 -->
+            <div class="col-md-6">
+                <!-- div.row.align-items-center -->
+                <div class="row align-items-center">
+                    <!-- div.col-12>img.img-fluid -->
+                    <div class="col-12"><img src="img/undraw_hello_ccwj.svg" alt="" class="img-fluid">
+                    </div>
+                    <!-- div.col-12[id="link-container"]>a{Eu já tenho uma conta} -->
+                    <div class="col-12" id="link-container"><a href="login.html">Eu já tenho uma conta</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
