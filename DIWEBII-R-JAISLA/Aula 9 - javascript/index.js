@@ -99,65 +99,123 @@
 // <= -> menor ou igual a que 
 // >= -> maior ou igual a que 
 
-document.write("<h3>Operador de compareção: igual a</h3>.")
-var valor1 = 9;
-var valor2 = 9;
+// document.write("<h3>Operador de compareção: igual a</h3>.")
+// var valor1 = 9;
+// var valor2 = 9;
 
-if (valor1 == valor2) 
-{
-   document.write(`${valor1} é igual a ${valor2}.`); 
-}else
-{
-    document.write(`${valor1} é diferente de ${valor2}.`);
+// if (valor1 == valor2) 
+// {
+//    document.write(`${valor1} é igual a ${valor2}.`); 
+// }else
+// {
+//     document.write(`${valor1} é diferente de ${valor2}.`);
+// }
+
+// document.write("<h3>Operador de compareção: diferente de</h3>.")
+// var valor1 = 9;
+// var valor2 = 8;
+
+// if (valor1 != valor2) 
+// {
+//    document.write(`${valor1} é diferente de ${valor2}.`); 
+// }else
+// {
+//     document.write(`${valor1} é igual a ${valor2}.`);
+// }
+
+// document.write("<h3>Operador de compareção: menor que</h3>.")
+// var valor1 = 7;
+// var valor2 = 8;
+
+// if (valor1 < valor2) 
+// {
+//    document.write(`${valor1} é menor que ${valor2}.`); 
+// }else
+// {
+//     document.write(`${valor1} é maior que ${valor2}.`);
+// }
+
+// document.write("<h3>Operador de compareção: menor ou igual a que</h3>.")
+// var valor1 = 9;
+// var valor2 = 8;
+
+// if (valor1 <= valor2) 
+// {
+//    document.write(`${valor1} é menor ou igual a ${valor2}.`); 
+// }else
+// {
+//     document.write(`${valor1} é maior que ${valor2}.`);
+// }
+
+// document.write("<h3>Operador de compareção: maior ou igual a que</h3>.")
+// var valor1 = 9;
+// var valor2 = 8;
+
+// if (valor1 >= valor2) 
+// {
+//    document.write(`${valor1} é maior ou igual a ${valor2}.`); 
+// }else
+// {
+//     document.write(`${valor1} é menor que ${valor2}.`);
+// }
+
+
+
+// Operações lógicas
+// && -> e/and
+// || -> ou/or
+// ! -> não/not
+
+// document.write('<h4>Operador lógico: &&(e)</h4>');
+// var nota = 8;
+// var faltas = 25;
+
+// if ((nota >= 5) && (faltas < 20)) {
+//     document.write('<h4>Operador lógico: &&(e)</h4>Aprovado!!');
+// }else{
+//     document.write('Reprovado!!');
+// }
+
+
+// if ((nota >= 5) || (faltas < 20)) {
+//     document.write('<h4>Operador lógico: ||(ou)</h4>Aprovado!!');
+// }else{
+//     document.write('Reprovado!!<br>');
+// }
+
+// var situacao = !true;
+//     document.write(`<h4>Operador lógico: !(não)</h4>${situacao}`);
+
+
+
+// Operações de incremento e decremento
+// ++ -> incremento
+// -- -> decremento
+
+// var qtePessoa = 0;
+// qtePessoa ++;
+// document.writeln(`Quantidade de pessoas que passam pela porta giratória: ${qtePessoa} <br>`);
+
+// var qtePessoaShow = 5000;
+// qtePessoaShow --;
+// document.write(`Quantidade de lugares disponíveis: ${qtePessoaShow}`);
+
+
+
+// Funções
+function nome_funcao(){
+   alert('Login e senha incorretos'); 
 }
 
-document.write("<h3>Operador de compareção: diferente de</h3>.")
-var valor1 = 9;
-var valor2 = 8;
-
-if (valor1 != valor2) 
-{
-   document.write(`${valor1} é diferente de ${valor2}.`); 
-}else
-{
-    document.write(`${valor1} é igual a ${valor2}.`);
+function soma(a, b) {
+    var total = a + b;
+    alert(`O valor da soma é: ${total}`);
 }
 
-document.write("<h3>Operador de compareção: menor que</h3>.")
-var valor1 = 7;
-var valor2 = 8;
-
-if (valor1 < valor2) 
-{
-   document.write(`${valor1} é menor que ${valor2}.`); 
-}else
-{
-    document.write(`${valor1} é maior que ${valor2}.`);
+function desconto(a, b){
+    var totalDesc = a - b;
+    return totalDesc;
+    // document.write(`Valor final com desconto: R$  ${totalDesc}`);
 }
-
-document.write("<h3>Operador de compareção: menor ou igual a que</h3>.")
-var valor1 = 9;
-var valor2 = 8;
-
-if (valor1 <= valor2) 
-{
-   document.write(`${valor1} é menor ou igual a ${valor2}.`); 
-}else
-{
-    document.write(`${valor1} é maior que ${valor2}.`);
-}
-
-document.write("<h3>Operador de compareção: maior ou igual a que</h3>.")
-var valor1 = 9;
-var valor2 = 8;
-
-if (valor1 >= valor2) 
-{
-   document.write(`${valor1} é maior ou igual a ${valor2}.`); 
-}else
-{
-    document.write(`${valor1} é menor que ${valor2}.`);
-}
-
-
-
+var resultadoDesc = desconto(10, 3);
+document.write(`Valor final com desconto: R$ ${resultadoDesc}`)
