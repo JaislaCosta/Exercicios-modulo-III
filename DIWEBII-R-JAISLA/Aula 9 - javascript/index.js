@@ -203,19 +203,73 @@
 
 
 // Funções
-function nome_funcao(){
-   alert('Login e senha incorretos'); 
-}
+// function nome_funcao(){
+//    alert('Login e senha incorretos'); 
+// }
 
-function soma(a, b) {
-    var total = a + b;
-    alert(`O valor da soma é: ${total}`);
-}
+// function soma(a, b) {
+//     var total = a + b;
+//     alert(`O valor da soma é: ${total}`);
+// }
 
-function desconto(a, b){
-    var totalDesc = a - b;
-    return totalDesc;
-    // document.write(`Valor final com desconto: R$  ${totalDesc}`);
+// function desconto(a, b){
+//     var totalDesc = a - b;
+//     return totalDesc;
+// document.write(`Valor final com desconto: R$  ${totalDesc}`);
+// }
+// var resultadoDesc = desconto(10, 3);
+// document.write(`Valor final com desconto: R$ ${resultadoDesc}`)
+
+
+
+// Estrutura condicionais - if - else / else-if
+// var nota = 2;
+
+// if (nota >= 6) {
+//     document.write(`Nota: ${nota} Parabéns!!! Você foi aprovado...`);
+// }else if((nota >= 4) && (nota < 6)){
+//     document.write(`Nota: ${nota} Mais ou menos...Você está de recuperação...vai ter que me aguentar mais um pouco`);
+// }else{
+//     document.write(`${nota} Não foi dessa vez...volte semestre que vem...Reprovado!!!`);
+// }
+
+
+// var sol = false;
+// var chuva = true;
+
+// if (sol) {
+//     document.write('Tempo ensolarado...Vamos a praia...');
+// }else if(chuva){
+//     document.write('Tempo chuvoso. Risco de raios...RISCO DE TEMPESTADES!!! Ficaremos em casa mesmo.');
+// }else{
+//     document.write('Tempo com o céu limpo...Vamos ao parque!!');
+// }
+
+
+// Switch-case 
+// var key = 1;
+
+// switch (key) {
+//     case 1:
+//         document.write(`Chave: ${key} - Chave do apartamento`);
+//         break;
+//     case 2:
+//         document.write(`Chave: ${key} - Chave da casa`);
+//         break;
+//     case 3:
+//         document.write(`Chave: ${key} - Chave da sala comercial`);
+//     case 4:
+//         document.write(`Chave: ${key} - Chave do carro`);
+//         break;
+//     default:
+//         document.write(`Chave: ${key} - Chave não correpondente com nenhum tipo de uso`);
+//         break;
+// }
+
+
+// While 
+var inicio = 1;
+while(inicio <= 10){
+    document.write(`Número do cliente: ${inicio}<br>`);
+    inicio++;
 }
-var resultadoDesc = desconto(10, 3);
-document.write(`Valor final com desconto: R$ ${resultadoDesc}`)
