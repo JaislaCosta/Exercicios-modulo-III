@@ -46,5 +46,5 @@ carro.shift();
 carro.splice(3, 2);
 
 carro.forEach(function( item, indice, array){
-document.write(` ${item} <br> ${indice}`);
+document.write(` ${indice} - ${item}<br>`);
 });
